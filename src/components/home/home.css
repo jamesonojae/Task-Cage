@@ -1,5 +1,53 @@
-.colorStyle {
-    background: #020261;
-    height: 600px;
+.firstLayout {
+    height: 700px;
     width: auto;
 }
+
+.secondLayout {
+    background: #020261;
+    height: 500px;
+    width: auto;
+}
+
+.subHeaderStyle {
+    padding: 100px 0 0 300px;
+    /*justify-content: center;*/
+    font-size: 40px;
+    font-weight: 500;
+}
+.btnColor {
+    background: #081E39;
+    color: #ffffff;
+    width: 100%;
+}
+.btnColor:hover {
+    color: #FF8215;
+}
+.smallText {
+    font-size: 16px;
+    color: #FF8215;
+    font-weight: 400;
+}
+
+.cardStyle {
+    border: none;
+    box-shadow:  0 0 3px rgba(226, 216, 216, 0.42);
+    border-radius: 15px;
+}
+.sectionStyle {
+
+}
+.inputStyle {
+    border-radius: 15px 15px;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+
