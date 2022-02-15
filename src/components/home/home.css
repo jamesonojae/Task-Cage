@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
 .firstLayout {
     height: 700px;
     width: auto;
+    background-color: #081E39;
 }
 
 .secondLayout {
-    background: #020261;
+    background: #f2f2f2;
     height: 500px;
     width: auto;
 }
@@ -12,8 +16,12 @@
 .subHeaderStyle {
     padding: 100px 0 0 300px;
     /*justify-content: center;*/
-    font-size: 40px;
-    font-weight: 500;
+
+    font-size:45px;
+    color: white;
+
+   font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
 }
 .btnColor {
     background: #081E39;

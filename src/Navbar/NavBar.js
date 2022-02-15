@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Navbar.css';
+import {  NavLink } from 'react-router-dom';
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -9,9 +10,11 @@ const NavBar = () => {
           {/*<span className="littleStyle">power by</span>*/}
         </div>
         <div className={`nav-items ${isOpen && "open"}`}>
-          <a href="/home">Home</a>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/trade">Trade</NavLink>
           <a ><span className="loginBtn"  data-toggle="modal" data-target="#myModal">Login</span></a>
         </div>
+
         <div className={`nav-toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
           <div className="bar">
 

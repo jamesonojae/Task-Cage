@@ -1,6 +1,7 @@
 import React from 'react';
+import './TradeContent.css';
 
-const Trade = () => {
+const TradeContent = () => {
   return (
       <div className="sub-header">
         <div className="firstLayout">
@@ -12,9 +13,9 @@ const Trade = () => {
                 Supply chain freemium investor long tail agile development prototype validation influencer.
               </p>
               <div className="row">
-                <div className="col-md-6">
-                  <button className="btn btnColor">Join Our Trading PlatForm</button>
-                </div>
+                {/*<div className="col-md-6">*/}
+                {/*  <button className="btn btnColor">Join Our Trading PlatForm</button>*/}
+                {/*</div>*/}
 
 
               </div>
@@ -23,76 +24,55 @@ const Trade = () => {
               <img src='/assets/images/bitcoin-image2.png' alt='' />
             </div>
 
-            <div className="col-md-2"/>
-            <div className="col-md-8 sectionStyle">
+            <div className="col-md-4"/>
+            <div className="col-md-4 sectionStyle">
               <div className="card cardStyle">
                 <div className="card-body">
-                  <input className="form-control inputStyle"/>
-                  <table className="table table-hover">
-                    <thead>
-                    <tr>
-                      <th>Firstname</th>
-                      <th>Lastname</th>
-                      <th>Email</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                      <td>John</td>
-                      <td>Doe</td>
-                      <td>john@example.com</td>
-                    </tr>
-                    <tr>
-                      <td>Mary</td>
-                      <td>Moe</td>
-                      <td>mary@example.com</td>
-                    </tr>
-                    <tr>
-                      <td>July</td>
-                      <td>Dooley</td>
-                      <td>july@example.com</td>
-                    </tr>
-                    <tr>
-                      <td>John</td>
-                      <td>Doe</td>
-                      <td>john@example.com</td>
-                    </tr>
-                    <tr>
-                      <td>Mary</td>
-                      <td>Moe</td>
-                      <td>mary@example.com</td>
-                    </tr>
-                    <tr>
-                      <td>July</td>
-                      <td>Dooley</td>
-                      <td>july@example.com</td>
-                    </tr>
-                    <tr>
-                      <td>John</td>
-                      <td>Doe</td>
-                      <td>john@example.com</td>
-                    </tr>
-                    <tr>
-                      <td>Mary</td>
-                      <td>Moe</td>
-                      <td>mary@example.com</td>
-                    </tr>
-                    <tr>
-                      <td>July</td>
-                      <td>Dooley</td>
-                      <td>july@example.com</td>
-                    </tr>
-                    <tr>
-                      <td>July</td>
-                      <td>Dooley</td>
-                      <td>july@example.com</td>
-                    </tr>
-                    </tbody>
-                  </table>
+
+                      <div className="container">
+                        <form action="">
+                          <div className="row">
+                            <div className="col-md-6">
+
+
+                              <select name="cars" id="cars">
+                                <option value="USDC">USDC</option>
+                                <option value="NGN">NGN</option>
+                                <option value="YEN">YEN</option>
+                                <option value="EURO">EURO</option>
+                              </select>
+                            </div>
+                            <div className="col-md-6">
+                              <input  type="text" id="firstValue" name="firstValue" placeholder="0" />
+                            </div>
+                            {/*<br/>*/}
+                            {/*<button   className="btn " style={{width:"70px",height:"70px",borderRadius:"50px"}}><i className="fa-solid fa-arrows-rotate" /> </button>*/}
+                            {/*<br/>*/}
+                            <div className="col-md-6">
+                              <select name="cars" id="cars">
+                                <option value="USDC">USDC</option>
+                                <option value="NGN">NGN</option>
+                                <option value="YEN">YEN</option>
+                                <option value="EURO">EURO</option>
+                              </select>
+                            </div>
+
+                            <div className="col-md-6">
+
+                              <input  type="text" id="secondValue" name="secondValue" placeholder="0" />
+
+                            </div>
+
+                          </div>
+
+                          <input className="btn btnColor " type="submit" value="Continue to Trade"  />
+                        </form>
+                      </div>
+
                 </div>
               </div>
             </div>
-            <div className="col-md-2"/>
+            <div className="col-md-4"/>
 
           </div>
         </div>
@@ -101,5 +81,4 @@ const Trade = () => {
       </div>
   );
 };
-
-export default Trade;
+export default TradeContent;
